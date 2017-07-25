@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.datasoft_bd.assignment.View.root.NewExpanseActivity">
+
+    <EditText
+        android:id="@+id/expancePurposeTv"
+        android:layout_width="297dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Expance Purpose"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="53dp"
+        android:layout_marginTop="49dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/amountTv"
+        android:layout_width="215dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:hint="Amount"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="134dp"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/expancePurposeTv"
+        android:layout_alignLeft="@+id/expancePurposeTv"
+        android:layout_alignStart="@+id/expancePurposeTv" />
+
+    <Spinner
+        android:id="@+id/catagorySpinner"
+        android:layout_width="268dp"
+        android:layout_height="41dp"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="217dp"
+        android:layout_marginTop="32dp"
+        android:drawSelectorOnTop="true"
+        android:entries="@array/spinner_data"
+        android:layout_below="@+id/amountTv"
+        android:layout_alignLeft="@+id/amountTv"
+        android:layout_alignStart="@+id/amountTv" />
+
+    <Button
+        android:id="@+id/cancleBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcle"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="312dp"
+        android:layout_alignBaseline="@+id/addNewBtn"
+        android:layout_alignBottom="@+id/addNewBtn"
+        android:layout_alignLeft="@+id/catagorySpinner"
+        android:layout_alignStart="@+id/catagorySpinner" />
+
+    <Button
+        android:id="@+id/addNewBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New"
+        tools:layout_editor_absoluteX="187dp"
+        tools:layout_editor_absoluteY="312dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/catagorySpinner"
+        android:layout_alignRight="@+id/catagorySpinner"
+        android:layout_alignEnd="@+id/catagorySpinner"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp" />
+</RelativeLayout>

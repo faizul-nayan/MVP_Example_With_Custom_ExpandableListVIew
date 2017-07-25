@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Assignment</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="spinner_data">
+        <item>Shirt</item>
+        <item>T-Shirt</item>
+        <item>Polo Shirt</item>
+        <item>Jeans Pants</item>
+        <item>Formal Pants</item>
+        <item>Slipper</item>
+        <item>Shoes</item>
+    </string-array>
+</resources>
